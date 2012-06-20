@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<body>
+  <wicket:panel>
+
+    <form wicket:id="form">
+      <div class="formField">
+        <label class="fieldLabelShort" for="name"><wicket:message key="name">Name: </wicket:message></label>
+        <input class="fieldInputShort" id="name" wicket:id="name" type="text" />
+      </div>
+      <div class="formField">
+        <label class="fieldLabelShort" for="gender"><wicket:message key="gender">Gender: </wicket:message></label>
+        <select class="fieldInputShort" id="gender" wicket:id="gender" />
+      </div>
+      <div class="formField">
+        <label class="fieldLabelShort" for="nationality"><wicket:message key="nationality">Nationality: </wicket:message></label>
+        <select class="fieldInputShort" id="nationality" wicket:id="nationality" />
+      </div>
+      <div class="formField">
+        <label class="fieldLabelShort" for="country"><wicket:message key="country">Country: </wicket:message></label>
+        <select class="fieldInputShort" id="country" wicket:id="country" />
+      </div>
+      <div class="actionsBar">
+        <input class="formAction" type="reset" wicket:id="resetButton" wicket:message="value:reset" value="Reset"></input>
+        <input class="formAction" type="submit" wicket:id="searchButton" wicket:message="value:search" value="Search"> </input>
+      </div>
+      <div class="clear" />
+    </form>
+  </wicket:panel>
+</body>
+
+</html>

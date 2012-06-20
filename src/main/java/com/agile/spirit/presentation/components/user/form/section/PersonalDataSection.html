@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<head>
+<title>Form Example</title>
+</head>
+
+<body>
+  <wicket:panel>
+    <span class="formSectionTitle"><wicket:message key="personalData">Personal data</wicket:message></span>
+    <div class="formField">
+      <label class="fieldLabel" for="firstName"><wicket:message key="firstName">First name: </wicket:message></label>
+      <span class="fieldRequiredFlag">*</span>
+      <input class="fieldInput" id="firstName" wicket:id="firstName" type="text" />
+    </div>
+    <div class="formField">
+      <label class="fieldLabel" for="lastName"><wicket:message key="lastName">Last name: </wicket:message></label>
+      <span class="fieldRequiredFlag">*</span>
+      <input class="fieldInput" id="lastName" wicket:id="lastName" type="text" />
+    </div>
+    <div class="formField">
+      <label class="fieldLabel" for="gender"><wicket:message key="gender">Gender: </wicket:message></label>
+      <span class="fieldOptionalFlag" >&nbsp;</span>
+      <span class="fieldInput" id="gender" wicket:id="gender" />
+    </div>
+    <div class="formField">
+      <label class="fieldLabel" for="nationality"><wicket:message key="nationality">Nationality: </wicket:message></label>
+      <span class="fieldOptionalFlag" >&nbsp;</span>
+      <select class="fieldInput" id="nationality" wicket:id="nationality" />
+    </div>
+    <div class="formField" wicket:id="passportGroup">
+      <label class="fieldLabel" for="passport"><wicket:message key="passport">Passport: </wicket:message></label>
+      <span class="fieldRequiredFlag">*</span>
+      <input class="fieldInput" id="passport" wicket:id="passport" />
+    </div>
+    <div class="formField">
+      <label class="fieldLabel" for="country"><wicket:message key="country">Country: </wicket:message></label>
+      <span class="fieldOptionalFlag" >&nbsp;</span>
+      <select class="fieldInput" id="country" wicket:id="country" />
+    </div>
+    <div class="formField">
+      <label class="fieldLabel" for="area"><wicket:message key="area">Area: </wicket:message></label>
+      <span class="fieldRequiredFlag">*</span>
+      <input class="fieldInput" id="area" wicket:id="area" type="text" />
+    </div>
+    <div wicket:id="personalDataFeedback"></div>
+  </wicket:panel>
+</body>
+
+</html>
